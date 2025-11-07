@@ -1,3 +1,6 @@
 [submodule "AA/TP1"]
 	path = AA/TP1
 	url = https://github.com/RuiFerreira05/AA-TP1
+[submodule "PIV/TP1"]
+	path = PIV/TP1
+	url = https://github.com/RuiFerreira05/PIV-TP1
