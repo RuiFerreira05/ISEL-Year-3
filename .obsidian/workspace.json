@@ -159,7 +159,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 330.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -173,7 +173,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "59a023a7b9b1d053",
+  "active": "3d0d8b84fa03765c",
   "lastOpenFiles": [
     "PIV/Codigo/Lib/site-packages/debugpy/_vendored/pydevd/pydevd_plugins/extensions/README.md",
     "PIV/Avaliação PIV.md",
