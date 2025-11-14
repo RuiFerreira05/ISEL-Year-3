@@ -1,0 +1,21 @@
+services:
+    tomcat:
+        image: tomcat:jre25
+        container_name: tomcat_with_volume
+        ports: [ 8080:8080 ]
+        volumes: [ ./webapps:/usr/local/tomcat/webapps, conf:/usr/local/tomcat/conf ]
+
+volumes:
+    webapps:
+        driver: local
+        driver_opts:
+            o: bind
+            type: none
+            device: ./webapps
+
+    conf:
+        driver: local
+        driver_opts:
+            o: bind
+            type: none
+            device: ./conf

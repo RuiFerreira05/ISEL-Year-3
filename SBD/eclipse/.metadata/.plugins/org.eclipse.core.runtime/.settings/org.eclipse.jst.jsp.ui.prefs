@@ -1,0 +1,14 @@
+SCRIPT_AREA_BORDER=\#fbd153 | null | false | false | false | false
+SCRIPT_AREA_BORDER,defaultValueBeforeOverriddenFromCSS=\#e3714b | null | false
+eclipse.preferences.version=1
+overriddenByCSS=,SCRIPT_AREA_BORDER,tagAttributeEquals,tagAttributeName,tagAttributeValue,tagBorder,tagName,
+tagAttributeEquals=\#45ab0e | null | false | false | false | false
+tagAttributeEquals,defaultValueBeforeOverriddenFromCSS=null | null | false
+tagAttributeName=\#a7ec21 | null | false | false | false | false
+tagAttributeName,defaultValueBeforeOverriddenFromCSS=\#ff00ff | null | false
+tagAttributeValue=\#13a87d | null | false | true | false | false
+tagAttributeValue,defaultValueBeforeOverriddenFromCSS=\#d400ff | null | false | true
+tagBorder=\#808080 | null | false | false | false | false
+tagBorder,defaultValueBeforeOverriddenFromCSS=\#00fefe | null | false
+tagName=\#03a8d8 | null | true | false | false | false
+tagName,defaultValueBeforeOverriddenFromCSS=\#59b3b3 | null | false
