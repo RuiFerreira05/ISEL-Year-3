@@ -7,3 +7,6 @@
 [submodule "PIV/TP2"]
 	path = PIV/TP2
 	url = https://github.com/RuiFerreira05/PIV-TP2
+[submodule "AA/TP2"]
+	path = AA/TP2
+	url = https://github.com/RuiFerreira05/AA-TP2
