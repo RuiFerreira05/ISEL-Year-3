@@ -10,6 +10,3 @@
 [submodule "AA/TP2"]
 	path = AA/TP2
 	url = https://github.com/RuiFerreira05/AA-TP2
-[submodule "SBD/TP2"]
-	path = SBD/TP2
-	url = https://github.com/RuiFerreira05/SBD-TP2
