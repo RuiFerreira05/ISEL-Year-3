@@ -15,42 +15,41 @@ INSERT INTO TipoServico (servico, preco, precoCancel) VALUES
 ('tratamentos terapêuticos', 40, 30);
 
 -- UTILIZADOR
--- Corrected 'Snatarém' to 'Santarém'. Ensure schema CHECK constraint is updated.
 SET @user_vet_1001 = UUID();
-INSERT INTO Utilizador (idUser, nomeUser, contacto, nif, veterinario, dono, recepcionista, pais, rua, freguesia, concelho, distrito)
-VALUES (@user_vet_1001, 'Rui Ferreira', '912345678', '100100100', TRUE, FALSE, FALSE, 'Portugal', 'Av. Prof. Dr. Egas Moniz 70-12, Póvoa de Santa Iria', 'Póvoa de Santa Iria', 'Vila Franca de Xira', 'Lisboa');
+INSERT INTO Utilizador (idUser, pass, nomeUser, contacto, nif, veterinario, dono, recepcionista, gerente, pais, rua, freguesia, concelho, distrito)
+VALUES (@user_vet_1001, 'pass123', 'Rui Ferreira', '912345678', '100100100', TRUE, FALSE, FALSE, TRUE, 'Portugal', 'Av. Prof. Dr. Egas Moniz 70-12, Póvoa de Santa Iria', 'Póvoa de Santa Iria', 'Vila Franca de Xira', 'Lisboa');
 
 SET @user_vet_1002 = UUID();
-INSERT INTO Utilizador (idUser, nomeUser, contacto, nif, veterinario, dono, recepcionista, pais, rua, freguesia, concelho, distrito)
-VALUES (@user_vet_1002, 'Matilde Goncalves', '912345679', '100200200', TRUE, FALSE, FALSE, 'Portugal', 'R. Paul Harris 21, Almeirim', 'Almeirim', 'Almeirim', 'Santarém');
+INSERT INTO Utilizador (idUser, pass, nomeUser, contacto, nif, veterinario, dono, recepcionista, gerente, pais, rua, freguesia, concelho, distrito)
+VALUES (@user_vet_1002, 'pass123', 'Matilde Goncalves', '912345679', '100200200', TRUE, FALSE, FALSE, TRUE, 'Portugal', 'R. Paul Harris 21, Almeirim', 'Almeirim', 'Almeirim', 'Santarém');
 
 SET @user_vet_1003 = UUID();
-INSERT INTO Utilizador (idUser, nomeUser, contacto, nif, veterinario, dono, recepcionista, pais, rua, freguesia, concelho, distrito)
-VALUES (@user_vet_1003, 'Marta Garcia', '912345680', '100300300', TRUE, FALSE, FALSE, 'Portugal', 'R. Prof. António Caleiro 117, 2870-358 Montijo', 'Montijo', 'Montijo', 'Setúbal');
+INSERT INTO Utilizador (idUser, pass, nomeUser, contacto, nif, veterinario, dono, recepcionista, gerente, pais, rua, freguesia, concelho, distrito)
+VALUES (@user_vet_1003, 'pass123', 'Marta Garcia', '912345680', '100300300', TRUE, FALSE, FALSE, TRUE, 'Portugal', 'R. Prof. António Caleiro 117, 2870-358 Montijo', 'Montijo', 'Montijo', 'Setúbal');
 
 SET @user_dono_1 = UUID();
-INSERT INTO Utilizador (idUser, nomeUser, contacto, nif, veterinario, dono, recepcionista, pais, rua, freguesia, concelho, distrito)
-VALUES (@user_dono_1, 'Joaquim Marques', '213456789', '123456789', FALSE, TRUE, FALSE, 'Portugal', 'Av. Prof. Dr. Egas Moniz 70-12, Póvoa de Santa Iria', 'Póvoa de Santa Iria', 'Vila Franca de Xira', 'Lisboa');
+INSERT INTO Utilizador (idUser, pass, nomeUser, contacto, nif, veterinario, dono, recepcionista, gerente, pais, rua, freguesia, concelho, distrito)
+VALUES (@user_dono_1, 'pass123', 'Joaquim Marques', '213456789', '123456789', FALSE, TRUE, FALSE, FALSE, 'Portugal', 'Av. Prof. Dr. Egas Moniz 70-12, Póvoa de Santa Iria', 'Póvoa de Santa Iria', 'Vila Franca de Xira', 'Lisboa');
 
 SET @user_dono_2 = UUID();
-INSERT INTO Utilizador (idUser, nomeUser, contacto, nif, veterinario, dono, recepcionista, pais, rua, freguesia, concelho, distrito)
-VALUES (@user_dono_2, 'Animal Clinic Lda', '213456788', '987654321', FALSE, TRUE, FALSE, 'Portugal', 'R. Paul Harris 21, Almeirim', 'Almeirim', 'Almeirim', 'Santarém');
+INSERT INTO Utilizador (idUser, pass, nomeUser, contacto, nif, veterinario, dono, recepcionista, gerente, pais, rua, freguesia, concelho, distrito)
+VALUES (@user_dono_2, 'pass123', 'Animal Clinic Lda', '213456788', '987654321', FALSE, TRUE, FALSE, FALSE, 'Portugal', 'R. Paul Harris 21, Almeirim', 'Almeirim', 'Almeirim', 'Santarém');
 
 SET @user_dono_3 = UUID();
-INSERT INTO Utilizador (idUser, nomeUser, contacto, nif, veterinario, dono, recepcionista, pais, rua, freguesia, concelho, distrito)
-VALUES (@user_dono_3, 'Clara Silva', '289123456', '456789123', FALSE, TRUE, FALSE, 'Portugal', 'R. Prof. António Caleiro 117, 2870-358 Montijo', 'Montijo', 'Montijo', 'Setúbal');
+INSERT INTO Utilizador (idUser, pass, nomeUser, contacto, nif, veterinario, dono, recepcionista, gerente, pais, rua, freguesia, concelho, distrito)
+VALUES (@user_dono_3, 'pass123', 'Clara Silva', '289123456', '456789123', FALSE, TRUE, FALSE, FALSE, 'Portugal', 'R. Prof. António Caleiro 117, 2870-358 Montijo', 'Montijo', 'Montijo', 'Setúbal');
 
 SET @user_rec_1 = UUID();
-INSERT INTO Utilizador (idUser, nomeUser, contacto, nif, veterinario, dono, recepcionista, pais, rua, freguesia, concelho, distrito)
-VALUES (@user_rec_1, 'Ana Sousa', '219876543', '200100200', FALSE, FALSE, TRUE, 'Portugal', 'Av. Prof. Dr. Egas Moniz 70-12, Póvoa de Santa Iria', 'Póvoa de Santa Iria', 'Vila Franca de Xira', 'Lisboa');
+INSERT INTO Utilizador (idUser, pass, nomeUser, contacto, nif, veterinario, dono, recepcionista, gerente, pais, rua, freguesia, concelho, distrito)
+VALUES (@user_rec_1, 'pass123', 'Ana Sousa', '219876543', '200100200', FALSE, FALSE, TRUE, FALSE, 'Portugal', 'Av. Prof. Dr. Egas Moniz 70-12, Póvoa de Santa Iria', 'Póvoa de Santa Iria', 'Vila Franca de Xira', 'Lisboa');
 
 SET @user_rec_2 = UUID();
-INSERT INTO Utilizador (idUser, nomeUser, contacto, nif, veterinario, dono, recepcionista, pais, rua, freguesia, concelho, distrito)
-VALUES (@user_rec_2, 'Joao Almeida', '219876544', '200200200', FALSE, FALSE, TRUE, 'Portugal', 'R. Paul Harris 21, Almeirim', 'Almeirim', 'Almeirim', 'Santarém');
+INSERT INTO Utilizador (idUser, pass, nomeUser, contacto, nif, veterinario, dono, recepcionista, gerente, pais, rua, freguesia, concelho, distrito)
+VALUES (@user_rec_2, 'pass123', 'Joao Almeida', '219876544', '200200200', FALSE, FALSE, TRUE, FALSE, 'Portugal', 'R. Paul Harris 21, Almeirim', 'Almeirim', 'Almeirim', 'Santarém');
 
 SET @user_rec_3 = UUID();
-INSERT INTO Utilizador (idUser, nomeUser, contacto, nif, veterinario, dono, recepcionista, pais, rua, freguesia, concelho, distrito)
-VALUES (@user_rec_3, 'Beatriz Costa', '219876545', '200300300', FALSE, FALSE, TRUE, 'Portugal', 'R. Prof. António Caleiro 117, 2870-358 Montijo', 'Montijo', 'Montijo', 'Setúbal');
+INSERT INTO Utilizador (idUser, pass, nomeUser, contacto, nif, veterinario, dono, recepcionista, gerente, pais, rua, freguesia, concelho, distrito)
+VALUES (@user_rec_3, 'pass123', 'Beatriz Costa', '219876545', '200300300', FALSE, FALSE, TRUE, FALSE, 'Portugal', 'R. Prof. António Caleiro 117, 2870-358 Montijo', 'Montijo', 'Montijo', 'Setúbal');
 
 -- VETERINARIO
 INSERT INTO Veterinario (nLicenca, idUser) VALUES
@@ -63,6 +62,12 @@ INSERT INTO Recepcionista (idUser, localidade) VALUES
 (@user_rec_1, 'Póvoa de Santa Iria'),
 (@user_rec_2, 'Almeirim'),
 (@user_rec_3, 'Montijo');
+
+-- GERENTE
+INSERT INTO Gerente (idUser, localidade) VALUES
+(@user_vet_1001, 'Póvoa de Santa Iria'),
+(@user_vet_1002, 'Almeirim'),
+(@user_vet_1003, 'Montijo');
 
 -- VETERINARIOCLINICA
 INSERT INTO VeterinarioClinica (idUser, localidade) VALUES

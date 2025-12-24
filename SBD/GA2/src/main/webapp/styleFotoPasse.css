@@ -1,0 +1,49 @@
+/** * Estilo para Fotografia Tipo Passe 
+ * Proporção vertical típica (ex: 3x4 ou 4x5, usando 150px x 200px)
+ */
+/**
+ * 🖼️ Estilo para Fotografia Tipo Passe com Moldura Dourada Antiga
+ */
+.foto-passe {
+    /* 📐 Dimensões base para formato vertical */
+    width: 150px;
+    height: 200px;
+    
+    /* Garante que a imagem preencha a área sem distorcer (corte se necessário) */
+    object-fit: cover;
+    
+    /* Centraliza e torna a imagem um bloco */
+    display: block;
+    
+    /* Adiciona margem exterior suficiente para a moldura */
+    margin: 15px auto; 
+    
+    /* ------------------------------------------- */
+    /* 👑 ESTILO DA MOLDURA DOURADA */
+    /* ------------------------------------------- */
+    
+    /* 1. Borda Sólida: Serve como a base da moldura (Ouro Velho) */
+    border: 10px solid #B8860B; /* Dark Goldenrod */
+    
+    /* 2. Sombra/Relevo: Cria o efeito de profundidade e brilho metálico */
+    box-shadow: 
+        /* 🔆 Sombra interna para dar um aspeto de brilho/relevo (Bevel) */
+        inset 0 0 5px 2px rgba(255, 255, 180, 0.9), 
+        
+        /* 🌑 Sombra externa suave para dar profundidade ao redor da moldura */
+        0 0 8px 1px rgba(0, 0, 0, 0.5),
+        
+        /* ✨ Brilho/Aura Dourada para o efeito antigo/metálico */
+        0 0 18px 2px #D4AF37; /* Gold Metálico */
+        
+    /* Opcional: ligeiro arredondamento dos cantos */
+    border-radius: 3px;
+}
+
+/* 🖼️ Se estiver a usar esta classe numa imagem, pode querer garantir que o fundo do 
+   elemento que a contém (o <a>) não interfere no efeito.
+*/
+a .foto-estudante-passe {
+    border: 0; /* Remove a borda se estiver no <a> (se aplicável) */
+}
+	

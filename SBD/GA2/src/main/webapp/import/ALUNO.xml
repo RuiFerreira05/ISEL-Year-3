@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data exported_table="ALUNO" timestamp="2025-12-01T09:02:31.860747600">
+  <Aluno>
+    <numero>1</numero>
+    <nome>ABEL ALVES BOTELHO</nome>
+    <genero>M</genero>
+    <nascido>1980-10-20</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>2</numero>
+    <nome>Abel Alves da Costa Pina</nome>
+    <genero>M</genero>
+    <nascido>1971-05-04</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>3</numero>
+    <nome>ABILIO DOS SANTOS PINTO BRANCO</nome>
+    <genero>M</genero>
+    <nascido>1964-01-14</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>4</numero>
+    <nome>Abílio Pires dos Santos</nome>
+    <genero>M</genero>
+    <nascido>1975-01-06</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>5</numero>
+    <nome>ACACIO CARDOSO DA ROCHA</nome>
+    <genero>M</genero>
+    <nascido>1977-12-16</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>6</numero>
+    <nome>Acácio Cardoso do Nascimento</nome>
+    <genero>M</genero>
+    <nascido>1967-02-01</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>7</numero>
+    <nome>Adalberto Luís Marques Rabaça</nome>
+    <genero>M</genero>
+    <nascido>1966-12-27</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>8</numero>
+    <nome>ADALBERTO LUIS MARTINHO DE MELO</nome>
+    <genero>M</genero>
+    <nascido>1966-12-15</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>9</numero>
+    <nome>ADAO DE ALMEIDA SILVARES</nome>
+    <genero>M</genero>
+    <nascido>1974-02-28</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>10</numero>
+    <nome>Adao de Almeida Vasconcelos</nome>
+    <genero>M</genero>
+    <nascido>1968-06-08</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>11</numero>
+    <nome>ADAO FINO DA COSTA</nome>
+    <genero>M</genero>
+    <nascido>1965-09-30</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>12</numero>
+    <nome>Adélia Oliveira Pereira</nome>
+    <genero>F</genero>
+    <nascido>1965-07-30</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>13</numero>
+    <nome>ADELIA MARIA VAZ PESTANA SETE DIAS</nome>
+    <genero>F</genero>
+    <nascido>1973-10-30</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>14</numero>
+    <nome>ADERITO AUGUSTO FERREIRINHA</nome>
+    <genero>M</genero>
+    <nascido>1963-03-18</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>15</numero>
+    <nome>Adérito Augusto Figueira</nome>
+    <genero>M</genero>
+    <nascido>1972-07-07</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>16</numero>
+    <nome>ZACARIAS MACHADO FERREIRA</nome>
+    <genero>M</genero>
+    <nascido>1972-04-07</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>17</numero>
+    <nome>ZACARIAS MAGALHAES FERNANDES</nome>
+    <genero>M</genero>
+    <nascido>1972-04-16</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>18</numero>
+    <nome>Zélia Maria Lima da Costa</nome>
+    <genero>F</genero>
+    <nascido>1971-07-02</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>19</numero>
+    <nome>Zélia Maria Lopes Dias Moreira</nome>
+    <genero>F</genero>
+    <nascido>1957-08-07</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>20</numero>
+    <nome>Álvaro Silva d'Almeida</nome>
+    <genero>M</genero>
+    <nascido>1958-09-07</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>21</numero>
+    <nome>António Fagundes Fraga</nome>
+    <genero>M</genero>
+    <nascido>1959-11-07</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>22</numero>
+    <nome>Abreu Oliveira Antunes</nome>
+    <genero>M</genero>
+    <nascido>1960-01-07</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>23</numero>
+    <nome>ABEL JORGE DE ALPOIM E OSORIO DE VALDOLEIROS</nome>
+    <genero>M</genero>
+    <nascido>2000-01-01</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>24</numero>
+    <nome>ADILSON SALVE-RAINHA VICENTE</nome>
+    <genero>M</genero>
+    <nascido>2000-04-01</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>25</numero>
+    <nome>AFONSO MARIA PERESTRELLO CORTE-REAL PERDIGÃO</nome>
+    <genero>M</genero>
+    <nascido>2000-03-01</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>26</numero>
+    <nome>VASCO DE VASCONCELOS DIAS DOS SANTOS CARNEIRO</nome>
+    <genero>M</genero>
+    <nascido>2000-05-01</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>27</numero>
+    <nome>Abreu Poças PETAVY</nome>
+    <genero>M</genero>
+    <nascido>1999-01-07</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>28</numero>
+    <nome>ABEL JORGE DE ALPOIM E OSORIO DE VALDOLEIROS</nome>
+    <genero>M</genero>
+    <nascido>2001-08-03</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>29</numero>
+    <nome>ADILSON SALVE-RAINHA VICENTE</nome>
+    <genero>M</genero>
+    <nascido>2002-10-06</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>30</numero>
+    <nome>AFONSO MARIA PERESTRELLO CORTE-REAL PERDIGÃO</nome>
+    <genero>M</genero>
+    <nascido>1998-05-09</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>31</numero>
+    <nome>PROFIRIO DIAS AGUIAR MOTA</nome>
+    <genero>M</genero>
+    <nascido>1997-01-08</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>32</numero>
+    <nome>Procópio Tinta Fina Taniças PATRAO CARNEIRO</nome>
+    <genero>M</genero>
+    <nascido>2001-07-01</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>33</numero>
+    <nome>PRIYESKUMAR PRAVINCHANDRA NANDVANA DA SILVA</nome>
+    <genero>M</genero>
+    <nascido>1999-04-01</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>34</numero>
+    <nome>PROTÁSIO DE MATOS CARNEIRO LEÃO</nome>
+    <genero>M</genero>
+    <nascido>2000-05-01</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>35</numero>
+    <nome>BERNARDO PANTALEÃO NICO LOJA</nome>
+    <genero>M</genero>
+    <nascido>1998-09-03</nascido>
+  </Aluno>
+  <Aluno>
+    <numero>36</numero>
+    <nome>Maria AmÉlia Augusta EugÉnia Josefina LuÍsa Teodolinda HeloÍsa Francisca Xavier de Paula Gabriela Rafaela Gonzaga de BraganÇa</nome>
+    <genero>F</genero>
+    <nascido>1853-02-04</nascido>
+  </Aluno>
+</data>

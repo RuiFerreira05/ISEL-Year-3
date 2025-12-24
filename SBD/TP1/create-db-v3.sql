@@ -24,12 +24,14 @@ CREATE TABLE TipoServico (
 -- nomeadamente veterinários, recepcionistas e donos.
 CREATE TABLE Utilizador (
 	idUser varchar(255) UNIQUE NOT NULL,
+    pass varchar(255) NOT NULL,
     nomeUser varchar(255) NOT NULL,
     contacto CHAR(9) UNIQUE NOT NULL,
     nif CHAR(9) UNIQUE NOT NULL,
     veterinario BOOL NOT NULL,
     dono BOOL NOT NULL,
     recepcionista BOOL NOT NULL,
+    gerente BOOL NOT NULL,
     pais varchar(40) NOT NULL,
     rua varchar(100) NOT NULL,
     freguesia varchar(50),
@@ -54,9 +56,18 @@ CREATE TABLE Veterinario (
     -- FOREIGN KEY (localidade) REFERENCES Clinica(localidade) ON DELETE CASCADE
 );
 
--- Tabela que contém todos os recepcionistas que trabalham nas clínicas da empresa. 
+-- Tabela que contém todos os recepcionistas que trabalham nas clínicas da empresa.
 -- Um recepcionista só pode trabalhar numa clínica.
 CREATE TABLE Recepcionista (
+	idUser varchar(255) UNIQUE NOT NULL,
+    localidade varchar(255) NOT NULL,
+
+    PRIMARY KEY(idUser),
+    FOREIGN KEY (idUser) REFERENCES Utilizador(idUser) ON DELETE CASCADE,
+    FOREIGN KEY (localidade) REFERENCES Clinica(localidade) ON DELETE CASCADE
+);
+
+CREATE TABLE Gerente (
 	idUser varchar(255) UNIQUE NOT NULL,
     localidade varchar(255) NOT NULL,
 
@@ -105,7 +116,7 @@ CREATE TABLE Raca (
     peso int unsigned,
     expecVida TINYINT unsigned,
     padrAtivos varchar(255),
-    
+
     PRIMARY KEY(nome),
     CONSTRAINT CHK_Porte CHECK (porte="pequeno" OR porte="médio"OR porte="grande"),
     CONSTRAINT CHK_PadrAtivos CHECK (padrAtivos="diurno" OR padrAtivos="noturno" OR padrAtivos="crepuscular")
@@ -117,7 +128,7 @@ CREATE TABLE Especie (
     nomeCientifico varchar(50) UNIQUE NOT NULL,
     regAlimentar varchar(255),
     vocalizacao varchar(50),
-    
+
     PRIMARY KEY(nomeCientifico),
     CONSTRAINT CHK_RegAlimentar CHECK (regAlimentar="herbívoro" OR regAlimentar="carnívoro" OR regAlimentar="omnívoro")
 );
@@ -143,7 +154,7 @@ CREATE TABLE Dono (
     FOREIGN KEY (idUser) REFERENCES Utilizador(idUser) ON DELETE CASCADE,
     CONSTRAINT CHK_TipoDono CHECK (tipoDono="empresa" OR tipoDono="pessoa"),
     CHECK ((tipoDono = 'empresa' AND capSocial IS NOT NULL) OR tipoDono = 'pessoa')
-    
+
 );
 
 -- Tabela que contém informações sobre todos os animais que são acompanhados nas clínicas.
@@ -300,7 +311,7 @@ FROM Marcacao AS m, Animal AS a, Utilizador AS u
 WHERE dia= curdate() AND estado= 'agendado' AND m.nUtente = a.nUtente AND m.veterinario = u.idUser
 ORDER BY hInicio;
 
--- Vista que mostra todos os blocos de horário correspondentes ao dia atual e o respetivo veterinário responsável. 
+-- Vista que mostra todos os blocos de horário correspondentes ao dia atual e o respetivo veterinário responsável.
 CREATE VIEW horarioDiaVeterinarios AS
 SELECT h.idUser, u.nomeUser, h.servico, h.hInicio, h.hFim, h.localidade
 FROM Horario AS h, Veterinario AS v, Utilizador as u
@@ -344,7 +355,7 @@ BEGIN
 	IF NEW.tipoDono= 'empresa' AND NEW.capSocial IS NULL
     THEN
 		SIGNAL SQLSTATE '45000'
-		SET MESSAGE_TEXT = 'A empresa tem de obrigatoriamente registar o seu capital social!';
+		SET MESSAGE_TEXT = 'A empresa tem de obirgatoriamente registar o seu capital social!';
 	END IF;
 END;
 
@@ -357,7 +368,7 @@ BEGIN
 	IF NEW.tipoDono= 'empresa' AND NEW.capSocial IS NULL
     THEN
 		SIGNAL SQLSTATE '45000'
-		SET MESSAGE_TEXT = 'A empresa tem de obrigatoriamente registar o seu capital social!';
+		SET MESSAGE_TEXT = 'A empresa tem de obirgatoriamente registar o seu capital social!';
 	END IF;
 END;
 

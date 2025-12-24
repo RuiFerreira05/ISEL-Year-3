@@ -1,0 +1,245 @@
+/* -----------------------------------------------------------------------
+ * 🎨 Ficheiro de Estilos
+ * Autor: Engº P. Filipe
+ * ----------------------------------------------------------------------- */
+/* --- ⚙️ Estilos Gerais de Base (Reset Básico e Tipografia) --- */
+
+/* 🏠 Define a fonte, remove margens padrão e aplica um fundo cinzento suave a toda a página. */
+body {
+    font-family: 'Segoe UI', Verdana, Tahoma, Geneva, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6; /* Cinzento claro para o fundo da página. */
+}
+
+/* 📦 O contentor principal centraliza o conteúdo e simula um 'cartão' com sombra para destaque. */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade. */
+}
+
+/* --- Títulos (Headings) --- */
+
+/* 🔵 Estilo para o título principal (H1), usando a cor primária. */
+h1 {
+    color: #007bff; /* Azul primário. */
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* 🌑 Estilo para títulos de secção (H2), com uma linha divisória para organização. */
+h2 {
+    color: #343a40;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+/* --- Fontes Personalizadas --- */
+
+/* 💾 Declaração da fonte Liberation Mono, carregada localmente para garantir o alinhamento monoespaçado. */
+@font-face {
+    font-family: 'LiberationMonoWeb';
+    /* O caminho é relativo ao ficheiro CSS, assumindo que styles.css está no mesmo nível 
+       que o diretório 'fonts' ou um nível acima. Assumimos 'styles.css' em webapp/css/styles.css 
+       e a fonte em webapp/fonts/LiberationMono-Regular.ttf para que o caminho funcione. */
+    src: url('fonts/LiberationMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* --- Mensagens de Status --- */
+
+/* Estilo base para mensagens de feedback */
+.status-message {
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+.status-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+.status-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.status-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+
+/* --- Formulários e Controles --- */
+
+/* Estilo base para todos os botões (ação, primário) */
+.btn {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.1s;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background-color: #007bff; /* Azul primário */
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Vermelho para ações destrutivas */
+    color: white;
+}
+
+.btn-success {
+    background-color: #28a745; /* Verde para ações de sucesso/confirmação */
+    color: white;
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Amarelo para avisos/exportação */
+    color: #212529;
+}
+
+/* --- Menu de Administração (administracao.jsp) --- */
+
+/* Layout de grelha para os itens de menu/ação */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grelha responsiva */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* 📦 Estilo para cada item do menu, simulando um cartão */
+.menu-item {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    
+    /* 📐 Novas Propriedades para Centramento (Vertical e Horizontal) */
+    display: flex; /* Ativa o Flexbox para o contentor. */
+    justify-content: center; /* Centra o conteúdo na horizontal (eixo principal). */
+    align-items: center; /* Centra o conteúdo na vertical (eixo cruzado). */
+    text-align: center; /* 📝 Garante que o texto em linha (se houver) também é centrado. */
+}
+
+.menu-item h3 {
+    margin-top: 0;
+    color: #007bff;
+    font-size: 1.2em;
+}
+
+.form-action {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Grupos de botões para formulários de ação */
+.button-group {
+    display: flex;
+    justify-content: flex-end; /* Alinha o botão à direita */
+    margin-top: 10px;
+}
+
+.button-group button {
+    width: 100%; /* Botões de ação preenchem o espaço */
+}
+
+/* --- Saída da Consola --- */
+
+.console-output {
+    background-color: #212529; 
+    color: #00ff00; 
+    line-height: 1;
+    padding: 15px;
+    border-radius: 8px;
+    /*margin-top: 15px;*/
+    letter-spacing: 0.006em;
+    white-space: pre; 		/* Garante a preservação rigorosa dos espaços. */
+    display: block; 			/* Garante que o elemento se comporta como bloco. */
+    font-family: 'LiberationMonoWeb', 'SFMono-Regular', Consolas, Menlo, 'Courier New', monospace; 
+    font-size: 0.8em;
+    overflow-x: auto; /* Adiciona scroll horizontal se a linha for muito longa */
+}
+
+/* --- Formulários de Registo de Notas/Frequências --- */
+
+.form-inscricao, .form-avaliacao {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Estilo para labels e inputs dentro dos formulários */
+.form-inscricao label, .form-avaliacao label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.form-inscricao input[type="text"], 
+.form-inscricao input[type="number"], 
+.form-avaliacao input[type=\"text\"], 
+.form-avaliacao input[type=\"number\"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que padding e border estão incluídos na largura total. */
+}
+
+/* --- 🛠️ Estilos Adicionais para Botões de Download --- */
+
+/* Organiza os botões de download numa linha com espaçamento uniforme */
+.button-group-row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os botões quebrem a linha se não houver espaço */
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 15px;
+}
+
+/* Garante que os botões dentro do grupo têm largura igual ou automática */
+.button-group-row button {
+    flex-grow: 1; /* Faz com que os botões se expandam para preencher o espaço */
+    /* width: auto; */
+    min-width: 140px; /* Largura mínima para botões menores */
+}
+
+/* --- ⏳ NOVO: Estilo para Botão em Processamento/Loading --- */
+
+/* 🚧 Botão Processando: Indica que a ação foi iniciada e está a decorrer. */
+.btn-processing {
+    background-color: #6c757d; /* Cinzento escuro para 'a trabalhar' */
+    color: #fff;
+    cursor: wait; /* Muda o cursor para indicar espera */
+    pointer-events: none; /* Desativa cliques */
+}

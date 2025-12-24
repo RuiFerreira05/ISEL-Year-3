@@ -1,3 +1,3 @@
 use vetcare;
 
-select * from resultado;
+select * from utilizador;
